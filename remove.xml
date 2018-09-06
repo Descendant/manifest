@@ -36,6 +36,6 @@
   <remove-project name="platform/build" />
   <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/packages/apps/Music" />
-  <remove-project name="platform/packages/apps/Email" />
   <remove-project name="platform/system/core" />
+  <remove-project name="platform/packages/apps/SettingsIntelligence" />
 </manifest>
