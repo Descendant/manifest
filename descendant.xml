@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="descendant"
+           fetch="https://github.com/Descendant" />
+<!-- GSI remotes -->
+  <remote name="phh" fetch="https://github.com/phhusson/" />
+  <remote name="dil" fetch="https://github.com/dil3mm4/" />
+
+  <include name="remove.xml" />
+
+  <project path="build/make" name="build_make" groups="pdk" remote="descendant" revision="NineDotZero" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <project path="build/soong" name="build_soong" remote="descendant" revision="NineDotZero" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+
+  <project path="prebuilts/build-tools" name="prebuilts_build-tools" remote="descendant" revision="NineDotZero" />
+  <project path="frameworks/compile/mclinker" name="frameworks_compile_mclinker" remote="descendant" revision="NineDotZero" />
+  <project path="frameworks/base" name="frameworks_base" remote="descendant" revision="NineDotZero" />
+  <project path="vendor/descendant" name="vendor_descendant" remote="descendant" revision="NineDotZero" >
+   <linkfile src="GSI/buildsupport/descendant_gsi.sh" dest="descendant_gsi.sh" />
+   <linkfile src="GSI/buildsupport/apply-patches.sh" dest="apply-patches.sh" />
+  </project>
+
+  <project path="system/core" name="system_core" remote="descendant" revision="NineDotZero" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="descendant" revision="NineDotZero" />
+  <project path="packages/apps/Descendant" name="packages_apps_Descendant" remote="descendant" revision="NineDotZero" />
+
+<!-- GSI repos -->
+  <project path="device/phh/treble" name="device_phh_treble" remote="phh" revision="android-9.0" />
+  <project path="external/exfat" name="exfat" remote="phh" revision="android.bp-pie" />
+  <project path="patches" name="treble_patches" remote="phh"  revision="android-9.0" />
+  <project path="vendor/hardware_overlay" name="vendor_hardware_overlay" remote="phh" revision="pie" />
+  <project path="vendor/vndk" name="vendor_vndk" remote="phh" revision="master" />
+  <project path="vendor/vndk-tests" name="vendor_vndk-tests" remote="phh" revision="master" />
+  <project path="vendor/interfaces" name="vendor_interfaces" remote="phh" revision="pie" />
+
+</manifest>
