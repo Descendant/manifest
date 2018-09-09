@@ -43,6 +43,7 @@
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="descendant" revision="NineDotZero" />
   <project path="packages/apps/Descendant" name="packages_apps_Descendant" remote="descendant" revision="NineDotZero" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="descendant" revision="NineDotZero" />
+  <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="descendant" revision="NineDotZero" />
 
 <!-- GSI repos -->
   <project path="device/phh/treble" name="device_phh_treble" remote="phh" revision="android-9.0" />

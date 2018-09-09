@@ -38,4 +38,6 @@
   <remove-project name="platform/packages/apps/Music" />
   <remove-project name="platform/system/core" />
   <remove-project name="platform/packages/apps/SettingsIntelligence" />
+  <remove-project name="platform/packages/apps/PackageInstaller" />
+
 </manifest>
