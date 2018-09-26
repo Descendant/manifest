@@ -10,6 +10,7 @@
 
 <!-- GSI remotes -->
   <remote name="phh" fetch="https://github.com/phhusson/" />
+  <remote name="dil3mm4" fetch="https://github.com/dil3mm4/" />
 
 <!-- Removal Xml -->
   <include name="remove.xml" />
@@ -46,9 +47,9 @@
   <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="descendant" revision="NineDotZero" />
 
 <!-- GSI repos -->
-  <project path="device/phh/treble" name="device_phh_treble" remote="phh" revision="android-9.0" />
+  <project path="device/phh/treble" name="device_phh_treble" remote="dil3mm4" revision="android-9.0" />
   <project path="external/exfat" name="exfat" remote="phh" revision="android.bp-pie" />
-  <project path="patches" name="treble_patches" remote="phh"  revision="android-9.0" />
+  <project path="patches" name="treble_patches" remote="dil3mm4" revision="android-9.0" />
   <project path="vendor/hardware_overlay" name="vendor_hardware_overlay" remote="phh" revision="pie" />
   <project path="vendor/vndk" name="vendor_vndk" remote="phh" revision="master" />
   <project path="vendor/vndk-tests" name="vendor_vndk-tests" remote="phh" revision="master" />
