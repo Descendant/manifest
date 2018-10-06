@@ -39,5 +39,5 @@
   <remove-project name="platform/system/core" />
   <remove-project name="platform/packages/apps/SettingsIntelligence" />
   <remove-project name="platform/packages/apps/PackageInstaller" />
-
+  <remove-project name="platform/packages/apps/DocumentsUI" />
 </manifest>
