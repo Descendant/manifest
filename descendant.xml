@@ -46,6 +46,8 @@
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="descendant" revision="NineDotZero" />
   <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="descendant" revision="NineDotZero" />
   <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="descendant" revision="NineDotZero" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="descendant" revision="NineDotZero" />
+
 <!-- GSI repos -->
   <project path="device/phh/treble" name="device_phh_treble" remote="dil3mm4" revision="android-9.0" />
   <project path="external/exfat" name="exfat" remote="phh" revision="android.bp-pie" />
