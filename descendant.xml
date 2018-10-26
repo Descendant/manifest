@@ -3,7 +3,8 @@
 
 <!-- Descendant Remote -->
   <remote name="descendant"
-           fetch="https://github.com/Descendant" />
+           fetch="https://github.com/Descendant" 
+	   review="review.gerrithub.io" />
 
   <remote name="descendant_gitlab"
 	   fetch="https://gitlab.com/Descendant" />
