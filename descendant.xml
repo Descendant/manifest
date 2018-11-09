@@ -39,7 +39,6 @@
   <project path="frameworks/av" name="frameworks_av" remote="descendant" revision="NineDotZero" />
   <project path="vendor/descendant" name="vendor_descendant" remote="descendant" revision="NineDotZero" >
    <linkfile src="GSI/buildsupport/descendant_gsi.sh" dest="descendant_gsi.sh" />
-   <linkfile src="GSI/buildsupport/apply-patch.sh" dest="apply-patch.sh" />
   </project>
 
   <project path="system/core" name="system_core" remote="descendant" revision="NineDotZero" />
@@ -49,10 +48,19 @@
   <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="descendant" revision="NineDotZero" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="descendant" revision="NineDotZero" />
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="descendant" revision="NineDotZero" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="descendant" />
+  <project path="system/bt" name="system_bt" remote="descendant" revision="NineDotZero" /> 
+  <project path="system/vold" name="system_vold" remote="descendant" revision="NineDotZero" /> 
+  <project path="external/selinux" name="external_selinux" remote="descendant" revision="NineDotZero" /> 
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="descendant" revision="NineDotZero" /> 
+  <project path="system/netd" name="system_netd" remote="descendant" revision="NineDotZero" /> 
+  <project path="frameworks/native" name="frameworks_native" remote="descendant" revision="NineDotZero" /> 
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="descendant" revision="NineDotZero" /> 
+  <project path="system/sepolicy" name="system_sepolicy" remote="descendant" revision="NineDotZero" /> 
+
 <!-- GSI repos -->
   <project path="device/phh/treble" name="device_phh_treble" remote="dil3mm4" revision="android-9.0" />
   <project path="external/exfat" name="exfat" remote="phh" revision="android.bp-pie" />
-  <project path="patches" name="treble_patches" remote="dil3mm4" revision="android-9.0" />
   <project path="vendor/hardware_overlay" name="vendor_hardware_overlay" remote="dil3mm4" revision="pie" />
   <project path="vendor/vndk" name="vendor_vndk" remote="phh" revision="master" />
   <project path="vendor/vndk-tests" name="vendor_vndk-tests" remote="phh" revision="master" />
