@@ -36,6 +36,7 @@
   <project path="prebuilts/build-tools" name="prebuilts_build-tools" remote="descendant" revision="NineDotZero" />
   <project path="frameworks/compile/mclinker" name="frameworks_compile_mclinker" remote="descendant" revision="NineDotZero" />
   <project path="frameworks/base" name="frameworks_base" remote="descendant" revision="NineDotZero" />
+  <project path="frameworks/av" name="frameworks_av" remote="descendant" revision="NineDotZero" />
   <project path="vendor/descendant" name="vendor_descendant" remote="descendant" revision="NineDotZero" >
    <linkfile src="GSI/buildsupport/descendant_gsi.sh" dest="descendant_gsi.sh" />
    <linkfile src="GSI/buildsupport/apply-patch.sh" dest="apply-patch.sh" />
@@ -58,7 +59,7 @@
   <project path="vendor/interfaces" name="vendor_interfaces" remote="phh" revision="pie" />
 
 
-<!-- Gapps -->
- <project path="vendor/gapps" name="vendor_gapps" remote="descendant_gitlab" revision="NineDotZero" />
+<!-- Gapps 
+ <project path="vendor/gapps" name="vendor_gapps" remote="descendant_gitlab" revision="NineDotZero" /> -->
 
 </manifest>
