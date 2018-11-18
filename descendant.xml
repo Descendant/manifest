@@ -57,7 +57,7 @@
   <project path="frameworks/native" name="frameworks_native" remote="descendant" revision="NineDotZero" /> 
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="descendant" revision="NineDotZero" /> 
   <project path="system/sepolicy" name="system_sepolicy" remote="descendant" revision="NineDotZero" /> 
-
+  <project path="packages/providers/AmbientPlayHistoryProvider" name="packages_providers_AmbientPlayHistoryProvider" remote="descendant" revision="NineDotZero" />
 <!-- GSI repos -->
   <project path="device/phh/treble" name="device_phh_treble" remote="dil3mm4" revision="android-9.0" />
   <project path="external/exfat" name="exfat" remote="phh" revision="android.bp-pie" />
