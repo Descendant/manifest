@@ -3,11 +3,7 @@
 
 <!-- Descendant Remote -->
   <remote name="descendant"
-           fetch="https://github.com/Descendant" 
-	   review="review.gerrithub.io" />
-
-  <remote name="descendant_gitlab"
-	   fetch="https://gitlab.com/Descendant" />
+           fetch="https://github.com/Descendant" />
 
 <!-- GSI remotes -->
   <remote name="phh" fetch="https://github.com/phhusson/" />
@@ -27,14 +23,6 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
-  <project path="build/soong" name="build_soong" remote="descendant" revision="NineDotZero" >
-    <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  </project>
-
-
-  <project path="prebuilts/build-tools" name="prebuilts_build-tools" remote="descendant" revision="NineDotZero" />
-  <project path="frameworks/compile/mclinker" name="frameworks_compile_mclinker" remote="descendant" revision="NineDotZero" />
   <project path="frameworks/base" name="frameworks_base" remote="descendant" revision="NineDotZero" />
   <project path="frameworks/av" name="frameworks_av" remote="descendant" revision="NineDotZero" />
   <project path="vendor/descendant" name="vendor_descendant" remote="descendant" revision="NineDotZero" >
@@ -43,7 +31,6 @@
 
   <project path="system/core" name="system_core" remote="descendant" revision="NineDotZero" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="descendant" revision="NineDotZero" />
-  <project path="packages/apps/Descendant" name="packages_apps_Descendant" remote="descendant" revision="NineDotZero" />
   <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="descendant" revision="NineDotZero" />
   <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="descendant" revision="NineDotZero" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="descendant" revision="NineDotZero" />
@@ -57,7 +44,10 @@
   <project path="frameworks/native" name="frameworks_native" remote="descendant" revision="NineDotZero" /> 
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="descendant" revision="NineDotZero" /> 
   <project path="system/sepolicy" name="system_sepolicy" remote="descendant" revision="NineDotZero" /> 
-  <project path="packages/providers/AmbientPlayHistoryProvider" name="packages_providers_AmbientPlayHistoryProvider" remote="descendant" revision="NineDotZero" />
+  <project path="vendor/themes" name="vendor_themes" remote="descendant" revision="NineDotZero" />
+  <project path="packages/apps/Gestures" name="packages_apps_Gestures" remote="descendant" revision="NineDotZero" />
+  <project path="vendor/support" name="vendor_support" remote="descendant" revision="NineDotZero" />
+  
 <!-- GSI repos -->
   <project path="device/phh/treble" name="device_phh_treble" remote="dil3mm4" revision="android-9.0" />
   <project path="external/exfat" name="exfat" remote="phh" revision="android.bp-pie" />
