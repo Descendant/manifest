@@ -13,7 +13,7 @@
   <include name="remove.xml" />
 
 <!-- Descendant repos -->
-  <project path="build/make" name="build_make" groups="pdk" remote="descendant" revision="OneDotSix_staging" >
+  <project path="build/make" name="build_make" groups="pdk" remote="descendant" revision="TwoDotZero" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -23,34 +23,38 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
-  <project path="frameworks/base" name="frameworks_base" remote="descendant" revision="OneDotSix_staging" />
-  <project path="frameworks/av" name="frameworks_av" remote="descendant" revision="OneDotSix_staging" />
-  <project path="vendor/descendant" name="vendor_descendant" remote="descendant" revision="OneDotSix_staging" >
+  <project path="frameworks/base" name="frameworks_base" remote="descendant" revision="TwoDotZero" />
+  <project path="frameworks/av" name="frameworks_av" remote="descendant" revision="TwoDotZero" />
+  <project path="vendor/descendant" name="vendor_descendant" remote="descendant" revision="TwoDotZero" >
    <linkfile src="GSI/buildsupport/descendant_gsi.sh" dest="descendant_gsi.sh" />
   </project>
 
-  <project path="system/core" name="system_core" remote="descendant" revision="OneDotSix_staging" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="descendant" revision="OneDotSix_staging" />
-  <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="descendant" revision="OneDotSix_staging" />
-  <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="descendant" revision="OneDotSix_staging" />
-  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="descendant" revision="OneDotSix_staging" />
-  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="descendant" revision="OneDotSix_staging" />
-  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="descendant" revision="OneDotSix_staging"  />
-  <project path="system/bt" name="system_bt" remote="descendant" revision="OneDotSix_staging" /> 
-  <project path="system/vold" name="system_vold" remote="descendant" revision="OneDotSix_staging" /> 
-  <project path="external/selinux" name="external_selinux" remote="descendant" revision="OneDotSix_staging" /> 
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="descendant" revision="OneDotSix_staging" /> 
-  <project path="system/netd" name="system_netd" remote="descendant" revision="OneDotSix_staging" /> 
-  <project path="frameworks/native" name="frameworks_native" remote="descendant" revision="OneDotSix_staging" /> 
-  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="descendant" revision="OneDotSix_staging" /> 
-  <project path="system/sepolicy" name="system_sepolicy" remote="descendant" revision="OneDotSix_staging" /> 
-  <project path="vendor/themes" name="vendor_themes" remote="descendant" revision="OneDotSix_staging" />
-  <project path="packages/apps/Gestures" name="packages_apps_Gestures" remote="descendant" revision="OneDotSix_staging" />
-  <project path="vendor/support" name="vendor_support" remote="descendant" revision="OneDotSix_staging" />
-  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="descendant" revision="OneDotSix_staging" />
-
+  <project path="system/core" name="system_core" remote="descendant" revision="TwoDotZero" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="descendant" revision="TwoDotZero" />
+  <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="descendant" revision="TwoDotZero" />
+  <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="descendant" revision="TwoDotZero" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="descendant" revision="TwoDotZero" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="descendant" revision="TwoDotZero" />
+  <project path="packages/apps/Utility" name"packages_apps_Utility" remote"descendant" revision="TwoDotZero" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="descendant" revision="TwoDotZero"  />
+  <project path="system/bt" name="system_bt" remote="descendant" revision="TwoDotZero" /> 
+  <project path="system/vold" name="system_vold" remote="descendant" revision="TwoDotZero" /> 
+  <project path="external/selinux" name="external_selinux" remote="descendant" revision="TwoDotZero" /> 
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="descendant" revision="TwoDotZero" /> 
+  <project path="system/netd" name="system_netd" remote="descendant" revision="TwoDotZero" /> 
+  <project path="frameworks/native" name="frameworks_native" remote="descendant" revision="TwoDotZero" /> 
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="descendant" revision="TwoDotZero" /> 
+  <project path="system/sepolicy" name="system_sepolicy" remote="descendant" revision="TwoDotZero" /> 
+  <project path="vendor/themes" name="vendor_themes" remote="descendant" revision="TwoDotZero" />
+  <project path="packages/apps/Gestures" name="packages_apps_Gestures" remote="descendant" revision="TwoDotZero" />
+  <project path="vendor/support" name="vendor_support" remote="descendant" revision="TwoDotZero" />
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="descendant" revision="TwoDotZero" />
+  <project path="packages/apps/Gestures" name="packages_apps_Gestures" remote="descendant" revision="TwoDotZero"/>
+  <project path="packages/apps/CellBroadcastReceiver" name="packages_apps_CellBroadcastReceiver" remote="descendant" revision="TwoDotZero"/>
+  <project path="packages/apps/Pulse" name="packages_apps_Pulse" remote="descendant" revision="TwoDotZero"/>
+  
   <!-- GSI repos -->
-  <project path="device/phh/treble" name="device_phh_treble" remote="dil3mm4" revision="android-9.0" />
+  <project path="device/phh/treble" name="device_phh_treble" remote="dil3mm4" revision="TwoDotZero" />
   <project path="external/exfat" name="exfat" remote="phh" revision="android.bp-pie" />
   <project path="vendor/hardware_overlay" name="vendor_hardware_overlay" remote="dil3mm4" revision="pie" />
   <project path="vendor/vndk" name="vendor_vndk" remote="phh" revision="master" />
@@ -59,6 +63,6 @@
 
 
 <!-- Gapps 
- <project path="vendor/gapps" name="vendor_gapps" remote="descendant_gitlab" revision="OneDotSix_staging" /> -->
+ <project path="vendor/gapps" name="vendor_gapps" remote="descendant_gitlab" revision="TwoDotZero" /> -->
 
 </manifest>
