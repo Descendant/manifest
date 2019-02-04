@@ -7,7 +7,6 @@
 
 <!-- GSI remotes -->
   <remote name="phh" fetch="https://github.com/phhusson/" />
-  <remote name="dil3mm4" fetch="https://github.com/dil3mm4/" />
 
 <!-- Removal Xml -->
   <include name="remove.xml" />
@@ -25,10 +24,7 @@
 
   <project path="frameworks/base" name="frameworks_base" remote="descendant" revision="TwoDotZero" />
   <project path="frameworks/av" name="frameworks_av" remote="descendant" revision="TwoDotZero" />
-  <project path="vendor/descendant" name="vendor_descendant" remote="descendant" revision="TwoDotZero" >
-   <linkfile src="GSI/buildsupport/descendant_gsi.sh" dest="descendant_gsi.sh" />
-  </project>
-
+  <project path="vendor/descendant" name="vendor_descendant" remote="descendant" revision="TwoDotZero" />
   <project path="system/core" name="system_core" remote="descendant" revision="TwoDotZero" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="descendant" revision="TwoDotZero" />
   <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="descendant" revision="TwoDotZero" />
@@ -52,17 +48,15 @@
   <project path="packages/apps/Gestures" name="packages_apps_Gestures" remote="descendant" revision="TwoDotZero"/>
   <project path="packages/apps/CellBroadcastReceiver" name="packages_apps_CellBroadcastReceiver" remote="descendant" revision="TwoDotZero"/>
   <project path="packages/apps/Pulse" name="packages_apps_Pulse" remote="descendant" revision="TwoDotZero"/>
-  
+  <project path="packages/apps/CustomDoze" name="packages_apps_CustomDoze" remote="descendant" revision="TwoDotZero"/>
+  <project path="packages/apps/WeatherClient" name="packages_apps_WeatherClient" remote="descendant" revision="TwoDotZero"/>
+
   <!-- GSI repos -->
-  <project path="device/phh/treble" name="device_phh_treble" remote="dil3mm4" revision="TwoDotZero" />
+  <project path="device/phh/treble" name="device_phh_treble" remote="descendant"" revision="TwoDotZero" />
   <project path="external/exfat" name="exfat" remote="phh" revision="android.bp-pie" />
-  <project path="vendor/hardware_overlay" name="vendor_hardware_overlay" remote="dil3mm4" revision="pie" />
+  <project path="vendor/hardware_overlay" name="vendor_hardware_overlay" remote="phh" revision="pie" />
   <project path="vendor/vndk" name="vendor_vndk" remote="phh" revision="master" />
   <project path="vendor/vndk-tests" name="vendor_vndk-tests" remote="phh" revision="master" />
   <project path="vendor/interfaces" name="vendor_interfaces" remote="phh" revision="pie" />
-
-
-<!-- Gapps 
- <project path="vendor/gapps" name="vendor_gapps" remote="descendant_gitlab" revision="TwoDotZero" /> -->
 
 </manifest>
