@@ -49,5 +49,5 @@
   <remove-project name="platform/packages/services/Telephony"/>
   <remove-project name="platform/system/sepolicy"/>
   <remote-project name="platform/packages/apps/CellBroadcastReceiver" />
-
+  <remove-project name="platform/bionic"/>
 </manifest>
