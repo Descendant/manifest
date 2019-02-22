@@ -22,10 +22,10 @@ lunch treble_arm64_avN-userdebug
 make systemimage
 ```
 # Build variant
-Use ```treble_arm64_avN``` for ARM64 A build.
-Use ```treble_arm64_bvN``` for ARM64 AB build.
-Use ```treble_arm_avN``` for ARM A build.
-Use ```treble_a64_avN``` for ARM, 64 Binder build.
+Use ```treble_arm64_avN``` for ARM64 A build. 
+Use ```treble_arm64_bvN``` for ARM64 AB build. 
+Use ```treble_arm_avN``` for ARM A build. 
+And use ```treble_a64_avN``` for ARM, 64 Binder build.
 
 ## Contributing 
 We do appreciate contributions to our source. 
