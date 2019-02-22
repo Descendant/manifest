@@ -21,6 +21,12 @@ To begin your build please do as follows:
 lunch treble_arm64_avN-userdebug
 make systemimage
 ```
+# Build variant
+Use ```treble_arm64_avN``` for ARM64 A build. 
+Use ```treble_arm64_bvN``` for ARM64 AB build. 
+Use ```treble_arm_avN``` for ARM A build. 
+And use ```treble_a64_avN``` for ARM, 64 Binder build.
+
 ## Contributing 
 We do appreciate contributions to our source. 
 
@@ -28,4 +34,4 @@ In any form.
 
 If you'd wish to bring-up a device specific image for your device, please, consider heading to our Telegram chat
 
-([click to visit Descendant website](https://descendant.github.io/) to find it out) or just PR the necessary commits over our repos.
+([click to visit Descendant website](https://descendant.me/) to find it out) or just PR the necessary commits over our repos.
