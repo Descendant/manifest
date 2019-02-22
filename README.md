@@ -21,7 +21,7 @@ To begin your build please do as follows:
 lunch treble_arm64_avN-userdebug
 make systemimage
 ```
-**Notes**
+# Build variant
 Use ```treble_arm64_avN``` for ARM64 A build.
 Use ```treble_arm64_bvN``` for ARM64 AB build.
 Use ```treble_arm_avN``` for ARM A build.
