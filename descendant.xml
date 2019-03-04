@@ -60,4 +60,11 @@
   <project path="vendor/vndk-tests" name="vendor_vndk-tests" remote="phh" revision="master" />
   <project path="vendor/interfaces" name="vendor_interfaces" remote="phh" revision="pie" />
 
+  <!-- OpenGApps -->  
+  <remote name="opengapps" fetch="https://github.com/opengapps/"  />
+  <remote name="nezor" fetch="https://gitlab.nezorfla.me/opengapps/"  />
+  <project path="vendor/opengapps/build" name="aosp_build" revision="master" remote="opengapps" />
+  <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="nezor" />
+  <project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="nezor" />
+  <project path="vendor/opengapps/sources/arm64" name="arm64" clone-depth="1" revision="master" remote="nezor" />
 </manifest>
