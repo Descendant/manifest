@@ -22,6 +22,7 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
+  <project path="frameworks/descendant" name="frameworks_descendant" remote="descendant" revision="TwoDotOne" />
   <project path="frameworks/base" name="frameworks_base" remote="descendant" revision="TwoDotOne" />
   <project path="frameworks/av" name="frameworks_av" remote="descendant" revision="TwoDotOne" />
   <project path="vendor/descendant" name="vendor_descendant" remote="descendant" revision="TwoDotOne" />
