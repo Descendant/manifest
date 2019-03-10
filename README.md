@@ -12,16 +12,16 @@ To start your own descendance, begin with:
 
 Then sync it up with:
 
-```repo sync```
+```repo sync --force-sync --no-clone-bundle -j$(nproc --all)```
 
 ## Get at work 
 To begin your build please do as follows:
 
 ```. build/envsetup.sh 
-lunch treble_arm64_avN-userdebug
-make systemimage
+lunch descendant_codename-buildtype
+mka descendant
 ```
-## Variants
+## Variants for treble:
 Use ```treble_arm64_avN``` for an ARM64 A build. 
 
 Use ```treble_arm64_bvN``` for an ARM64 AB build. 

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-<!-- Descendant Remote -->
+  <!-- Descendant Remote -->
   <remote name="descendant"
-           fetch="https://github.com/Descendant" />
+          fetch="https://github.com/Descendant" />
 
-<!-- GSI remotes -->
+  <!-- GSI remotes -->
   <remote name="phh" fetch="https://github.com/phhusson/" />
 
-<!-- Removal Xml -->
-  <include name="remove.xml" />
+  <!-- Removal xml -->
+  <include name="snippets/remove.xml" />
 
-<!-- Descendant repos -->
-  <project path="build/make" name="build_make" groups="pdk" remote="descendant" revision="TwoDotOne" >
+  <!-- Descendant repos -->
+  <project path="build/make" name="build_make" groups="pdk" remote="descendant" revision="dssi-test" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -21,13 +21,21 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
+  <project path="build/kati" name="android_build_kati" groups="pdk,tradefed" remote="descendant" revision="TwoDotOne" />
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="descendant" revision="TwoDotOne" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="bionic" name="android_bionic" groups="pdk" remote="descendant" revision="TwoDotOne" />
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="descendant" revision="TwoDotOne" />
+  <project path="development" name="android_development" groups="pdk-cw-fs,pdk-fs" remote="descendant" revision="TwoDotOne"  />
 
   <project path="frameworks/descendant" name="frameworks_descendant" remote="descendant" revision="TwoDotOne" />
   <project path="frameworks/base" name="frameworks_base" remote="descendant" revision="TwoDotOne" />
-  <project path="frameworks/av" name="frameworks_av" remote="descendant" revision="TwoDotOne" />
-  <project path="vendor/descendant" name="vendor_descendant" remote="descendant" revision="TwoDotOne" />
+  <project path="frameworks/av" name="frameworks_av" remote="descendant" revision="dssi-test" />
+  <project path="vendor/descendant" name="vendor_descendant" remote="descendant" revision="dssi-test" />
   <project path="vendor/sounds" name="vendor_sounds" remote="descendant" revision="TwoDotOne" />
-  <project path="system/core" name="system_core" remote="descendant" revision="TwoDotOne" />
+  <project path="system/core" name="system_core" remote="descendant" revision="dssi-test" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="descendant" revision="TwoDotOne" />
   <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="descendant" revision="TwoDotOne" />
   <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="descendant" revision="TwoDotOne" />
@@ -38,11 +46,11 @@
   <project path="system/bt" name="system_bt" remote="descendant" revision="TwoDotOne" /> 
   <project path="system/vold" name="system_vold" remote="descendant" revision="TwoDotOne" /> 
   <project path="external/selinux" name="external_selinux" remote="descendant" revision="TwoDotOne" /> 
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="descendant" revision="TwoDotOne" /> 
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="descendant" revision="dssi-test" /> 
   <project path="system/netd" name="system_netd" remote="descendant" revision="TwoDotOne" /> 
-  <project path="frameworks/native" name="frameworks_native" remote="descendant" revision="TwoDotOne" /> 
-  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="descendant" revision="TwoDotOne" /> 
-  <project path="system/sepolicy" name="system_sepolicy" remote="descendant" revision="TwoDotOne" /> 
+  <project path="frameworks/native" name="frameworks_native" remote="descendant" revision="dssi-test" /> 
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="descendant" revision="dssi-test" /> 
+  <project path="system/sepolicy" name="system_sepolicy" remote="descendant" revision="dssi-test" /> 
   <project path="vendor/themes" name="vendor_themes" remote="descendant" revision="TwoDotOne" />
   <project path="vendor/support" name="vendor_support" remote="descendant" revision="TwoDotOne" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="descendant" revision="TwoDotOne" />
@@ -51,7 +59,6 @@
   <project path="packages/apps/Pulse" name="packages_apps_Pulse" remote="descendant" revision="TwoDotOne"/>
   <project path="packages/apps/CustomDoze" name="packages_apps_CustomDoze" remote="descendant" revision="TwoDotOne"/>
   <project path="packages/apps/WeatherClient" name="packages_apps_WeatherClient" remote="descendant" revision="TwoDotOne"/>
-  <project path="bionic" name="platform_bionic" remote ="phh" revision="android-9.0.0_r31-phh"/>
 
   <!-- GSI repos -->
   <project path="device/phh/treble" name="device_phh_treble" remote="descendant" revision="TwoDotOne" />
@@ -68,4 +75,5 @@
   <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="nezor" />
   <project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="nezor" />
   <project path="vendor/opengapps/sources/arm64" name="arm64" clone-depth="1" revision="master" remote="nezor" />
+
 </manifest>
