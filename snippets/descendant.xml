@@ -21,14 +21,14 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/kati" name="android_build_kati" groups="pdk,tradefed" remote="descendant" revision="TwoDotOne" />
+  <project path="build/kati" name="build_kati" groups="pdk,tradefed" remote="descendant" revision="TwoDotOne" />
   <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="descendant" revision="TwoDotOne" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="bionic" name="android_bionic" groups="pdk" remote="descendant" revision="TwoDotOne" />
-  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="descendant" revision="TwoDotOne" />
-  <project path="development" name="android_development" groups="pdk-cw-fs,pdk-fs" remote="descendant" revision="TwoDotOne"  />
+  <project path="bionic" name="bionic" groups="pdk" remote="descendant" revision="TwoDotOne" />
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="descendant" revision="TwoDotOne" />
+  <project path="development" name="development" groups="pdk-cw-fs,pdk-fs" remote="descendant" revision="TwoDotOne"  />
 
   <project path="frameworks/descendant" name="frameworks_descendant" remote="descendant" revision="TwoDotOne" />
   <project path="frameworks/base" name="frameworks_base" remote="descendant" revision="TwoDotOne" />
@@ -45,7 +45,6 @@
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="descendant" revision="TwoDotOne"  />
   <project path="system/bt" name="system_bt" remote="descendant" revision="TwoDotOne" /> 
   <project path="system/vold" name="system_vold" remote="descendant" revision="TwoDotOne" /> 
-  <project path="external/selinux" name="external_selinux" remote="descendant" revision="TwoDotOne" /> 
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="descendant" revision="dssi-test" /> 
   <project path="system/netd" name="system_netd" remote="descendant" revision="TwoDotOne" /> 
   <project path="frameworks/native" name="frameworks_native" remote="descendant" revision="dssi-test" /> 

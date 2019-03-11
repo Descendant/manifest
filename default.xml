@@ -697,5 +697,7 @@
 
   <!-- Track Descendant repos -->
   <include name="snippets/descendant.xml" />
-
+  <include name="snippets/fi.xml" />
+  <include name="snippets/los.xml" />
+  
 </manifest>
