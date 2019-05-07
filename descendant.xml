@@ -51,7 +51,7 @@
   <project path="packages/apps/Pulse" name="packages_apps_Pulse" remote="descendant" revision="TwoDotThree"/>
   <project path="packages/apps/CustomDoze" name="packages_apps_CustomDoze" remote="descendant" revision="TwoDotThree"/>
   <project path="packages/apps/WeatherClient" name="packages_apps_WeatherClient" remote="descendant" revision="TwoDotThree"/>
-  <project path="bionic" name="platform_bionic" remote ="phh" revision="android-9.0.0_r31-phh"/>
+  <project path="bionic" name="platform_bionic" remote ="phh" revision="android-9.0.0_r36-phh"/>
 
   <!-- GSI repos -->
   <project path="device/phh/treble" name="device_phh_treble" remote="descendant" revision="TwoDotThree" />
