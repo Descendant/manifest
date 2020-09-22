@@ -14,7 +14,7 @@ Then sync it up with:
 
 ```repo sync```
 
-## Get at work 
+## Get to work 
 To begin your build please do as follows:
 
 ```. build/envsetup.sh 
