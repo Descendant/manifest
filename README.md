@@ -1,4 +1,4 @@
-# Descendant 
+# Descendant Frameworks_BASse
 
 ## Dependencies
 Before getting started, please be sure to have the following packages in your OS:
@@ -8,13 +8,13 @@ Before getting started, please be sure to have the following packages in your OS
 ## Init our repo
 To start your own descendance, begin with:
 
-```repo init -u https://github.com/Descendant/manifest.git -b TwoDotThree```
+```repo init -u https://github.com/AospRemixer/manifest-1.git -b TwoDotThree```
 
 Then sync it up with:
 
 ```repo sync```
 
-## Get at work 
+## Get to work 
 To begin your build please do as follows:
 
 ```. build/envsetup.sh 
